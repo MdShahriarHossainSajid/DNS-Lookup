@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port Scanner"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:hint="Enter URL"
+
+        android:inputType="textUri"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonAnalyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analyze"
+        android:layout_below="@id/editTextUrl"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analysis Results:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/buttonAnalyze"
+        android:layout_marginTop="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewAnalysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="16dp" />
+    </ScrollView>
+
+</RelativeLayout>

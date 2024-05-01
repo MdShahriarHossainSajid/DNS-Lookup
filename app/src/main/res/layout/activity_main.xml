@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+
+        android:text="DNS Lookup"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/responseID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+
+        android:text="Load Time &amp; Page Size" />
+
+    <Button
+        android:id="@+id/openportID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+        android:text="Scanning Open Port" />
+
+    <Button
+        android:id="@+id/sslID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+
+        android:text="SSL Certificate Cheaker" />
+</LinearLayout>
